@@ -11,7 +11,7 @@
 
     <!-- Bootstrap core CSS -->
 <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    
     <style> 
       input[type=text] {
         width: 80%;
@@ -33,6 +33,11 @@
         text-decoration: none;
         margin: 4px 2px;
         cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      input[type=button]:hover {
+        background-color: #3CBC8D;
+        color: white;
       }
       .center-div {
         text-align:center;
@@ -144,7 +149,7 @@
         </table>
       </div>
       <div class="center-div">
-        <a href="add.html"><input type="button" ` value="Add"></a>
+        <a href="add.html"><input type="button" value="Add"></a>
       </div>
     </main>
   </div>
