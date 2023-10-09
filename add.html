@@ -1,45 +1,109 @@
-<!-- https://joyhong.tistory.com/105 -->
-
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+
+    <title>Insert title here</title>
+
+    <!-- 제목 스타일 -->
+    <style>
+        h3 {
+            margin-left: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- 입력 칸 스타일 -->
+    <style>
+        input[type=text] {
+            width: 210px;
+        }
+    </style>
+
+<!-- 버튼 스타일 -->
+    <style>
+        .add-button {
+            margin-left: 150px;
+        }
+    </style>
+
+<!-- 테이블 스타일 -->
+    <style>
+        table {
+            margin-left: 20px;
+        }
+    </style>
+
+    <!-- 테이블 위아래 선 스타일 -->
+    <style>
+        .table-wrapper {
+            width: 330px;
+            margin-left: 20px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            padding: 10px 0; 
+        }
+    </style>
 </head>
+
 <body>
 <div>
+    <!-- 학번 이름 성별 학부 / 생년월일 MBTI 전화번호 이메일-->
 <h3>학생 정보 입력</h3>
-<form id="form" th:object="${book}">
+<form id="form" th:object="${information}">
+    <div class="table-wrapper">
     <table>
     <tr>
-        <td>책제목</td>
+        <td>학번</td>
         <td>
-            <input type="text" th:field="*{title}" placeholder="책 제목을 입력하세요">
+            <input type="text" th:field="*{studentno}" placeholder="학번을 입력하세요">
         </td>
-        <td class="err" th:if="${#fields.hasErrors('title')}" th:errors="*{title}">Name Error</td>
     </tr>
     <tr>
-        <td>저자명</td>
+        <td>이름</td>
         <td>
-            <input type="text" th:field="*{creator}" placeholder="저자명을 입력하세요">
+            <input type="text" th:field="*{name}" placeholder="이름을 입력하세요">
         </td>
-        <td class="err" th:if="${#fields.hasErrors('creator')}" th:errors="*{creator}">Name Error</td>
     </tr>
     <tr>
-        <td>출판사</td>
+        <td>성별</td>
         <td>
-            <input type="text" th:field="*{publisher}" placeholder="출판사명을 입력하세요">
+            <input type="text" th:field="*{sex}" placeholder="성별을 입력하세요">
         </td>
-        <td class="err" th:if="${#fields.hasErrors('publisher')}" th:errors="*{publisher}">Name Error</td>
     </tr>
     <tr>
-        <td>출판연도</td>
+        <td>학부</td>
         <td>
-            <input type="text" th:field="*{publishedYear}">
+            <input type="text" th:field="*{department}" placeholder="학부를 입력하세요">
         </td>
     </tr>
-    </table>
-    <button type="button" onclick="inputData2(this)" >입력</button>
+    <tr>
+        <td>생년월일</td>
+        <td>
+            <input type="text" th:field="*{birth}" placeholder="생년월일을 입력하세요(YYMMDD)">
+        </td>
+    </tr>
+    <tr>
+        <td>MBTI</td>
+        <td>
+            <input type="text" th:field="*{mbti}" placeholder="MBTI를 입력하세요">
+        </td>
+    </tr>
+    <tr>
+        <td>전화번호</td>
+        <td>
+            <input type="text" th:field="*{phoneno}" placeholder="전화번호를 입력하세요">
+        </td>
+    </tr>
+    <tr>
+        <td>이메일</td>
+        <td>
+            <input type="text" th:field="*{email}" placeholder="이메일을 입력하세요">
+        </td>
+    </tr>
+</table>
+</div>
+    <p><button type="button" onclick="alert('게시물이 추가됩니다.')" class="add-button">추가</button></p>
 </form>
 </div>
 </body>

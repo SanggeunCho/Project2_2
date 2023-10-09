@@ -1,1 +1,92 @@
-<!-- https://getbootstrap.com/docs/5.1/examples/dashboard/ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+
+    <!-- 제목 스타일 -->
+    <style>
+      h3 {
+        margin-left: 20px;
+        font-size: 25px;
+        font-weight: bold;
+      }
+    </style>
+
+    <!-- 표 스타일 -->
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 50%;
+      }
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+      }
+      tr td:first-child {
+        font-weight: bold;
+        background-color: #f2f2f2;
+      }
+      .button-container {
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+
+  <h3><sapn id="name"></sapn> 학부생 Info.</h3>
+
+  <table id="studentInfo">
+    <tr><td>학번</td><td id="studentNo"></td></tr>
+    <tr><td>성별</td><td id="sex"></td></tr>
+    <tr><td>학부</td><td id="department"></td></tr>
+    <tr><td>생년월일</td><td id="birth"></td></tr>
+    <tr><td>MBTI</td><td id="mbti"></td></tr>
+    <tr><td>전화번호</td><td id="phoneno"></td></tr>
+    <tr><td>E-mail</td><td id="email"></td></tr>
+  </table>
+
+<div class="button-container" id="btnContainer">
+  <button onclick="location.href='edit.html'">수정</button>
+  <button onclick="confirmDelete()">삭제</button>
+</div>
+
+<script type="text/javascript">
+
+  function confirmDelete(){
+    if (confirm("게시물을 삭제할까요?")){
+      null;
+    }
+  }
+
+  // 테이블의 가운데에 버튼을 맞추는 함수
+  function alignButtons() {
+
+  const tableWidth = document.getElementById('studentInfo').offsetWidth; // 테이블의 너비를 가져옵니다.
+  const btnContainer = document.getElementById('btnContainer'); // 버튼 컨테이너를 가져옵니다.
+
+  btnContainer.style.width = `${tableWidth}px`; // 버튼 컨테이너의 너비를 테이블과 같게 설정합니다.
+  btnContainer.style.marginLeft = 'auto'; 
+  btnContainer.style.marginRight = 'auto'; 
+  }
+
+  window.onload = function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  
+  document.getElementById("studentNo").innerText = urlParams.get('studentno');
+  document.getElementById("name").innerText = urlParams.get('name');
+  document.getElementById("sex").innerText = urlParams.get('sex');
+  document.getElementById("department").innerText = urlParams.get('department');
+  document.getElementById("birth").innerText = urlParams.get('birth');
+  document.getElementById("mbti").innerText = urlParams.get('mbti');
+  document.getElementById("phoneno").innerText = urlParams.get('phoneno');
+  document.getElementById("email").innerText = urlParams.get('email');
+  
+  alignButtons(); // 페이지 로드 시 버튼 위치 조정
+
+  window.onresize = alignButtons;
+};
+</script>
+
+</body>
+</html>

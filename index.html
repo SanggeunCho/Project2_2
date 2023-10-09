@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="ko">
   <head>
@@ -12,6 +11,7 @@
     <!-- Bootstrap core CSS -->
 <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
+<!-- 제목 스타일 -->
     <style> 
       input[type=text] {
         width: 80%;
@@ -24,6 +24,7 @@
       }
       </style>
 
+<!-- 버튼 스타일 -->
     <style> 
       input[type=button] {
         background-color: #8b8b8b6e;
@@ -44,9 +45,14 @@
       }
       </style>
 
-    
+      <!-- 커서 스타일 -->
+      <style>
+        .clickable:hover {
+          cursor: pointer;
+        }
+      </style>
+
     <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
   </head>
   <body>
 
@@ -68,82 +74,75 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr class="clickable" onclick="location.href='view.html?studentno=21800123&name=이주안&sex=남&department=상담심리사회복지학부&&birth=99.07.30&&mbti=ENFP&&phoneno=010-1234-5678&&email=juan0730@handong.ac.kr'">
               <td>1</td>
-              <td>random</td>
-              <td>data</td>
-              <td>placeholder</td>
-              <td>text</td>
+              <td>21800123</a></td>
+              <td>이주안</td>
+              <td>남</td>
+              <td>상담심리사회복지학부</td>
             </tr>
-            <tr>
+            <tr class="clickable" onclick="location.href='view.html?studentno=22300978&name=이새롬&sex=여&department=글로벌리더쉽학부&&birth=97.01.07&&mbti=INTP&&phoneno=010-9876-5432&&email=saerom0107@handong.ac.kr'">
               <td>2</td>
-              <td>placeholder</td>
-              <td>irrelevant</td>
-              <td>visual</td>
-              <td>layout</td>
+              <td>22300978</td>
+              <td>이새롬</td>
+              <td>여</td>
+              <td>글로벌리더쉽학부</td>
             </tr>
-            <tr>
-              <td>2</td>
-              <td>data</td>
-              <td>rich</td>
-              <td>dashboard</td>
-              <td>tabular</td>
-            </tr>
-            <tr>
+            <tr class="clickable" onclick="location.href='view.html?studentno=22000789&name=송하영&sex=여&department=국제어문학부&&birth=97.09.29&&mbti=INFP&&phoneno=010-4567-8901&&email=hayoung0929@handong.ac.kr'">
               <td>3</td>
-              <td>information</td>
-              <td>placeholder</td>
-              <td>illustrative</td>
-              <td>data</td>
+              <td>22000789</td>
+              <td>송하영</td>
+              <td>여</td>
+              <td>국제어문학부</td>
             </tr>
-            <tr>
+            <tr class="clickable" onclick="location.href='view.html?studentno=22100345&name=이나경&sex=여&department=콘텐츠융합디자인학부&&birth=00.06.01&&mbti=INTP&&phoneno=010-2345-6789&&email=nagyung0601@handong.ac.kr'">
               <td>4</td>
-              <td>text</td>
-              <td>random</td>
-              <td>layout</td>
-              <td>dashboard</td>
+              <td>22100345</td>
+              <td>이나경</td>
+              <td>여</td>
+              <td>콘텐츠융합디자인학부</td>
             </tr>
-            <tr>
+            <tr class="clickable" onclick="location.href='view.html?studentno=22100567&name=조상근&sex=남&department=전산전자공학부&&birth=01.11.24&&mbti=ISTJ&&phoneno=010-8765-4321&&email=sanggeun1124@handong.ac.kr'">
               <td>5</td>
-              <td>dashboard</td>
-              <td>irrelevant</td>
-              <td>text</td>
-              <td>placeholder</td>
+              <td>22100567</td>
+              <td>조상근</td>
+              <td>남</td>
+              <td>전산전자공학부</td>
             </tr>
-            <tr>
+            <tr class="clickable" onclick="location.href='view.html?studentno=21900456&name=이서연&sex=여&department=법학부&&birth=00.01.22&&mbti=ISTJ&&phoneno=010-3456-7890&&email=seoyeon0122@handong.ac.kr'">
               <td>6</td>
-              <td>dashboard</td>
-              <td>illustrative</td>
-              <td>rich</td>
-              <td>data</td>
+              <td>21900456</td>
+              <td>이서연</td>
+              <td>여</td>
+              <td>법학부</td>
             </tr>
-            <tr>
+            <tr class="clickable" onclick="location.href='view.html?studentno=21800890&name=이채영&sex=여&department=커뮤니케이션학부&&birth=00.05.14&&mbti=INFJ&&phoneno=010-7654-3210&&email=chaeyoung0514@handong.ac.kr'">
               <td>7</td>
-              <td>placeholder</td>
-              <td>tabular</td>
-              <td>information</td>
-              <td>irrelevant</td>
+              <td>21800890</td>
+              <td>이채영</td>
+              <td>여</td>
+              <td>커뮤니케이션학부</td>
             </tr>
-            <tr>
+            <tr class="clickable" onclick="location.href='view.html?studentno=21900654&name=김재학&sex=남&department=경영경제학부&&birth=99.12.21&&mbti=ISTJ&&phoneno=010-5678-9012&&email=jaehak1221@handong.ac.kr'">
               <td>8</td>
-              <td>random</td>
-              <td>data</td>
-              <td>placeholder</td>
-              <td>text</td>
+              <td>21900654</td>
+              <td>김재학</td>
+              <td>남</td>
+              <td>경영경제학부</td>
             </tr>
-            <tr>
+            <tr class="clickable" onclick="location.href='view.html?studentno=22000234&name=백지헌&sex=여&department=공간환경시스템학부&&birth=03.04.17&&mbti=ISFJ&&phoneno=010-6543-2109&&email=jiheon0417@handong.ac.kr'">
               <td>9</td>
-              <td>placeholder</td>
-              <td>irrelevant</td>
-              <td>visual</td>
-              <td>layout</td>
+              <td>22000234</td>
+              <td>백지헌</td>
+              <td>여</td>
+              <td>공간환경시스템학부</td>
             </tr>
-            <tr>
+            <tr class="clickable" onclick="location.href='view.html?studentno=22100123&name=노지선&sex=여&department=기계제어학부&&birth=98.11.13&&mbti=ISTJ&&phoneno=010-1098-8765&&email=jisun1123@handong.ac.kr'">
               <td>10</td>
-              <td>data</td>
-              <td>rich</td>
-              <td>dashboard</td>
-              <td>tabular</td>
+              <td>22100123</td>
+              <td>노지선</td>
+              <td>여</td>
+              <td>기계제어학부</td>
             </tr>
           </tbody>
         </table>
@@ -155,9 +154,5 @@
   </div>
 </div>
 
-
-    <script src="bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-      <script src="Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
   </body>
 </html>
