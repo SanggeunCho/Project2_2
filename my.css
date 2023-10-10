@@ -21,18 +21,18 @@ body {
     }
 
     body {
-        font-size: 14px; /* 모바일 화면 폰트 사이즈 조정 */
+        font-size: 14px;
     }
 
     input[type=text] {
-        width: 100%; /* 모바일 화면에서 입력 필드 폭 100%로 설정 */
+        width: 100%;
     }
 
     .add-button {
-        margin-left: 0; /* 모바일 화면에서 버튼 마진 제거 */
+        margin-left: 0;
     }
 
     .table-wrapper {
-        width: 100%; /* 모바일 화면에서 테이블 래퍼 폭 100%로 설정 */
+        width: 100%;
     }
 }
