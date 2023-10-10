@@ -3,24 +3,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* 데스크톱용 스타일 */
-@media (min-width: 768px) {
-    /* 데스크톱용 전체 스타일 */
-    .title-container {
-        font-size: 24px;
-    }
-
-    .table-container {
-        font-size: 16px;
-    }
-
-    /* 데스크톱용 버튼 스타일 */
-    input[type=button] {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-}
-
 /* 모바일용 스타일 */
 @media (max-width: 767px) {
     /* 모바일용 전체 스타일 */
@@ -36,5 +18,21 @@ body {
     input[type=button] {
         font-size: 14px;
         padding: 8px 16px;
+    }
+
+    body {
+        font-size: 14px; /* 모바일 화면 폰트 사이즈 조정 */
+    }
+
+    input[type=text] {
+        width: 100%; /* 모바일 화면에서 입력 필드 폭 100%로 설정 */
+    }
+
+    .add-button {
+        margin-left: 0; /* 모바일 화면에서 버튼 마진 제거 */
+    }
+
+    .table-wrapper {
+        width: 100%; /* 모바일 화면에서 테이블 래퍼 폭 100%로 설정 */
     }
 }
