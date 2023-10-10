@@ -47,8 +47,8 @@
   </table>
 
 <div class="button-container" id="btnContainer">
-  <button onclick="location.href='edit.html'">수정</button>
-  <button onclick="confirmDelete()">삭제</button>
+  <button onclick="editStudentInfo()">Edit</button>
+  <button onclick="confirmDelete()">Delete</button>
 </div>
 
 <script type="text/javascript">
@@ -86,6 +86,22 @@
 
   window.onresize = alignButtons;
 };
+
+function editStudentInfo() {
+  const studentNo = document.getElementById("studentNo").innerText;
+  const name = document.getElementById("name").innerText;
+  const sex = document.getElementById("sex").innerText;
+  const department = document.getElementById("department").innerText;
+  const birth = document.getElementById("birth").innerText;
+  const mbti = document.getElementById("mbti").innerText;
+  const phoneno = document.getElementById("phoneno").innerText;
+  const email = document.getElementById("email").innerText;
+
+  // edit.html로 데이터 전달
+  const editUrl = `edit.html?studentno=${studentNo}&name=${name}&sex=${sex}&department=${department}&birth=${birth}&mbti=${mbti}&phoneno=${phoneno}&email=${email}`;
+  
+  window.location.href = editUrl;
+}
 </script>
 
 </body>

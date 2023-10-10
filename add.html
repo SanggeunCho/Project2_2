@@ -44,6 +44,23 @@
             padding: 10px 0; 
         }
     </style>
+    <script>
+        function validateForm() {
+            var studentno = document.getElementById("studentno").value;
+            var name = document.getElementById("name").value;
+            var sex = document.getElementById("sex").value;
+            var department = document.getElementById("department").value;
+
+            if(studentno === "" || name === "" || sex === "" || department === "") {
+                alert("학번, 이름, 성별, 학부는 필수 입력 항목입니다.");
+                return false;
+            }
+            else {
+                alert('게시물이 추가됩니다.');
+                return true;
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -56,25 +73,25 @@
     <tr>
         <td>학번</td>
         <td>
-            <input type="text" th:field="*{studentno}" placeholder="학번을 입력하세요">
+            <input id="studentno" type="text" th:field="*{studentno}" placeholder="학번을 입력하세요">
         </td>
     </tr>
     <tr>
         <td>이름</td>
         <td>
-            <input type="text" th:field="*{name}" placeholder="이름을 입력하세요">
+            <input id="name" type="text" th:field="*{name}" placeholder="이름을 입력하세요">
         </td>
     </tr>
     <tr>
         <td>성별</td>
         <td>
-            <input type="text" th:field="*{sex}" placeholder="성별을 입력하세요">
+            <input id="sex" type="text" th:field="*{sex}" placeholder="성별을 입력하세요">
         </td>
     </tr>
     <tr>
         <td>학부</td>
         <td>
-            <input type="text" th:field="*{department}" placeholder="학부를 입력하세요">
+            <input id="department" type="text" th:field="*{department}" placeholder="학부를 입력하세요">
         </td>
     </tr>
     <tr>
@@ -103,8 +120,9 @@
     </tr>
 </table>
 </div>
-    <p><button type="button" onclick="alert('게시물이 추가됩니다.')" class="add-button">추가</button></p>
+    <p><button type="button" onclick=validateForm() class="add-button">추가</button></p>
 </form>
 </div>
+    
 </body>
 </html>
