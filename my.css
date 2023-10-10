@@ -24,6 +24,10 @@ body {
         font-size: 14px;
     }
 
+    #add-page form {
+        width: 100%;
+    }
+
     #add-page input[type=text] {
         width: 100%;
     }
