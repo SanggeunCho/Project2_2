@@ -2,8 +2,7 @@
 body {
     font-family: Arial, sans-serif;
 }
-
-    #add-page {
+    #add-page table{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -15,11 +14,16 @@ body {
         width: 90%; /* 폼의 너비를 조정할 수 있습니다. */
         max-width: 400px; /* 필요에 따라 최대 너비를 지정할 수 있습니다. */
     }
+
 /* 모바일용 스타일 */
 @media (max-width: 767px) {
     /* 모바일용 전체 스타일 */
     #index-page .title-container {
         font-size: 18px;
+    }
+
+    #index-page .table-container {
+        font-size: 14px;
     }
 
 }
