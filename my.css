@@ -14,7 +14,7 @@ body {
         font-size: 14px;
     }
 
-    #add-page {
+    #add-page table{
         display: flex;
         flex-direction: column;
         align-items: center;
