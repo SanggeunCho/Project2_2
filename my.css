@@ -2,18 +2,6 @@
 body {
     font-family: Arial, sans-serif;
 }
-    #add-page table{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh; /* 화면 전체 높이에 맞춤 */
-    }
-
-    #add-page form {
-        width: 90%; /* 폼의 너비를 조정할 수 있습니다. */
-        max-width: 400px; /* 필요에 따라 최대 너비를 지정할 수 있습니다. */
-    }
 
 /* 모바일용 스타일 */
 @media (max-width: 767px) {
@@ -26,4 +14,16 @@ body {
         font-size: 14px;
     }
 
+    #add-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* 화면 전체 높이에 맞춤 */
+    }
+
+    #add-page form {
+        width: 90%; /* 폼의 너비를 조정할 수 있습니다. */
+        max-width: 400px; /* 필요에 따라 최대 너비를 지정할 수 있습니다. */
+    }
 }
