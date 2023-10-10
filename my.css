@@ -15,28 +15,8 @@ body {
     }
 
     /* 모바일용 버튼 스타일 */
-    #add-page input[type=button] {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-
-    #add-page body {
-        font-size: 14px;
-    }
 
     #add-page form {
-        width: 100%;
-    }
-
-    #add-page input[type=text] {
-        width: 100%;
-    }
-
-    #add-page .add-button {
-        margin-left: 0;
-    }
-
-    #add-page .table-wrapper {
         width: 100%;
     }
 }
