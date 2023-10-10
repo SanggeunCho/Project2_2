@@ -14,9 +14,36 @@ body {
         font-size: 14px;
     }
 
-    /* 모바일용 버튼 스타일 */
+     /* 모바일용 제목 스타일 */
+     #add-page h3 {
+        font-size: 20px; /* 제목 글꼴 크기 조정 */
+        margin-left: 10px; /* 좌측 여백 조정 */
+    }
 
-    #add-page form {
-        width: 100%;
+    /* 모바일용 입력 칸 스타일 */
+    #add-page input[type=text] {
+        width: 100%; /* 입력 칸 폭 확장 */
+        margin-left: 0; /* 좌측 여백 제거 */
+    }
+
+    /* 모바일용 버튼 스타일 */
+    #add-page .add-button {
+        margin-left: 0; /* 좌측 여백 제거 */
+        font-size: 16px; /* 버튼 글꼴 크기 조정 */
+        padding: 8px 12px; /* 버튼 내부 여백 조정 */
+    }
+
+    /* 모바일용 테이블 스타일 */
+    #add-page table {
+        margin-left: 10px; /* 좌측 여백 조정 */
+    }
+
+    /* 모바일용 테이블 위아래 선 스타일 */
+    #add-page .table-wrapper {
+        width: 100%; /* 테이블 폭 확장 */
+        margin-left: 0; /* 좌측 여백 제거 */
+        border-top: none; /* 테이블 위쪽 선 제거 */
+        border-bottom: none; /* 테이블 아래쪽 선 제거 */
+        padding: 5px 0; /* 상하 여백 조정 */
     }
 }
