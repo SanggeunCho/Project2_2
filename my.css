@@ -26,8 +26,10 @@ body {
         max-width: 400px;
     }
 
-    #edit-page btnContainer, #view-page btnContainer {
+    #edit-page button, #view-page button {
         display: flex;
         justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
 }
