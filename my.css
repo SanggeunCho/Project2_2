@@ -6,33 +6,33 @@ body {
 /* 모바일용 스타일 */
 @media (max-width: 767px) {
     /* 모바일용 전체 스타일 */
-    .title-container {
+    #index-page .title-container {
         font-size: 18px;
     }
 
-    .table-container {
+    #index-page .table-container {
         font-size: 14px;
     }
 
     /* 모바일용 버튼 스타일 */
-    input[type=button] {
+    #add-page input[type=button] {
         font-size: 14px;
         padding: 8px 16px;
     }
 
-    body {
+    #add-page body {
         font-size: 14px;
     }
 
-    input[type=text] {
+    #add-page input[type=text] {
         width: 100%;
     }
 
-    .add-button {
+    #add-page .add-button {
         margin-left: 0;
     }
 
-    .table-wrapper {
+    #add-page .table-wrapper {
         width: 100%;
     }
 }
