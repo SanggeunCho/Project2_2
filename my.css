@@ -1,48 +1,40 @@
+/* 공통 스타일 */
 body {
     font-family: Arial, sans-serif;
 }
 
-h1 {
-    font-size: 24px;
-}
-
-p {
-    font-size: 16px;
-}
-
-@media screen and (min-width: 768px) {
-    h1 {
+/* 데스크톱용 스타일 */
+@media (min-width: 768px) {
+    /* 데스크톱용 전체 스타일 */
+    .title-container {
         font-size: 24px;
     }
 
-    p {
+    .table-container {
         font-size: 16px;
     }
 
-    .desktop-only {
-        display: block;
-    }
-
-    .mobile-only {
-        display: none;
+    /* 데스크톱용 버튼 스타일 */
+    input[type=button] {
+        font-size: 16px;
+        padding: 10px 20px;
     }
 }
 
-
-@media screen and (max-width: 767px) {
-    h1 {
+/* 모바일용 스타일 */
+@media (max-width: 767px) {
+    /* 모바일용 전체 스타일 */
+    .title-container {
         font-size: 18px;
     }
 
-    p {
+    .table-container {
         font-size: 14px;
     }
 
-    .desktop-only {
-        display: none;
-    }
-
-    .mobile-only {
-        display: block;
+    /* 모바일용 버튼 스타일 */
+    input[type=button] {
+        font-size: 14px;
+        padding: 8px 16px;
     }
 }
