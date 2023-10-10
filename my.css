@@ -22,7 +22,7 @@ body {
         min-height: 100vh;
     }
 
-    #add-page form, #edit-page h3, #edit-page table, #edit-page .button-container, #view-page h3, #view-page table, #view-page .button-container {
+    #add-page form, #edit-page h3, #edit-page table, #edit-page button, #view-page h3, #view-page table, #view-page button {
         width: 100%;
         max-width: 400px;
     }
