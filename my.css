@@ -26,7 +26,7 @@ body {
         max-width: 400px;
     }
 
-    #edit-page button, #view-page button {
+    #edit-page btnContainer, #view-page btnContainer {
         display: flex;
         justify-content: center;
     }
