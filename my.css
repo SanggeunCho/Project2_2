@@ -5,7 +5,6 @@ body {
 
 /* 모바일용 스타일 */
 @media (max-width: 767px) {
-    /* 모바일용 전체 스타일 */
     #index-page .title-container {
         font-size: 18px;
     }
