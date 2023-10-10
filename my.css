@@ -28,5 +28,7 @@ body {
 
     #edit-page button, #view-page button {
         text-align: center;
+        display: flex;
+        justify-content: center;
     }
 }
