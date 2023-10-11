@@ -46,12 +46,12 @@
 
   <table id="studentInfo">
     <tr><td>학번</td><td><input class="input-field" type="text" id="studentNo"></td></tr>
-    <tr><td>학번</td><td><input class="input-field" type="text" id="sex"></td></tr>
-    <tr><td>학번</td><td><input class="input-field" type="text" id="department"></td></tr>
-    <tr><td>학번</td><td><input class="input-field" type="text" id="birth"></td></tr>
-    <tr><td>학번</td><td><input class="input-field" type="text" id="mbti"></td></tr>
-    <tr><td>학번</td><td><input class="input-field" type="text" id="phoneno"></td></tr>
-    <tr><td>학번</td><td><input class="input-field" type="text" id="email"></td></tr>
+    <tr><td>성별</td><td><input class="input-field" type="text" id="sex"></td></tr>
+    <tr><td>학부</td><td><input class="input-field" type="text" id="department"></td></tr>
+    <tr><td>생년월일</td><td><input class="input-field" type="text" id="birth"></td></tr>
+    <tr><td>MBTI</td><td><input class="input-field" type="text" id="mbti"></td></tr>
+    <tr><td>전화번호</td><td><input class="input-field" type="text" id="phoneno"></td></tr>
+    <tr><td>E-mail</td><td><input class="input-field" type="text" id="email"></td></tr>
   </table>
 
 <div class="button-container" id="btnContainer">
@@ -61,6 +61,15 @@
 <script type="text/javascript">
 
   function confirmEdit(){
+    var studentNo = document.getElementById("studentNo").value;
+    var sex = document.getElementById("sex").value;
+    var department = document.getElementById("department").value;
+
+    if (!studentNo || !sex || !department) {
+        alert('학번, 성별, 학부는 반드시 입력해야 합니다.');
+        return;
+    }
+
     if (confirm("게시물을 수정할까요?")){
       null;
     }
